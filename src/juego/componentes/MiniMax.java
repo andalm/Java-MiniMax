@@ -23,8 +23,7 @@ public class MiniMax extends Arbol{
         Random rnd = new Random();
         int op = rnd.nextInt(9-7+1) + 7;
         super.raiz.setDato(op);
-        super.raiz.setAcumulado(op);
-        System.out.println(op);
+        super.raiz.setAcumulado(op);        
     }  
     
     public MiniMax(int inicio)
@@ -71,9 +70,6 @@ public class MiniMax extends Arbol{
             }
             else
                 this.estado = 1;
-
-             if(super.raiz != null)
-                System.out.println(super.raiz.getDato());
         }
         else
             this.estado = 1;
